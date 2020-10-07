@@ -110,12 +110,27 @@ https://docs.datastax.com/en/cql-oss/3.3/cql/cql_reference/cqlReferenceTOC.html
 Let us know what you find:
 
 ```
-Update with your own examples
+token@cqlsh:comments> select user_name,comment_time,toDate(comment_time) from facebook limit 10;
+
+ user_name   | comment_time                         | system.todate(comment_time)
+-------------+--------------------------------------+-----------------------------
+ testuser765 | 130995ee-c697-11ea-b7a1-8c85907c08de |                  2020-07-15
+   testuser8 | 130995ee-c697-11ea-b7a1-8c85907c08de |                  2020-07-15
+ testuser352 | 130995ee-c697-11ea-b7a1-8c85907c08de |                  2020-07-15
+ testuser833 | 130995ee-c697-11ea-b7a1-8c85907c08de |                  2020-07-15
+ testuser147 | 130995ee-c697-11ea-b7a1-8c85907c08de |                  2020-07-15
+  testuser62 | 130995ee-c697-11ea-b7a1-8c85907c08de |                  2020-07-15
+ testuser546 | 130995ee-c697-11ea-b7a1-8c85907c08de |                  2020-07-15
+ testuser948 | 130995ee-c697-11ea-b7a1-8c85907c08de |                  2020-07-15
+ testuser143 | 130995ee-c697-11ea-b7a1-8c85907c08de |                  2020-07-15
+ testuser622 | 130995ee-c697-11ea-b7a1-8c85907c08de |                  2020-07-15
+
+(10 rows)
 ```
 
 Or connect, read and write to your Astra database via other methods.
 
-Tell us how you do it, we would love to know. 
+Simple to access my private datastore cluster. :)
 
 ```
 class Connection:
