@@ -3,8 +3,8 @@ from cassandra.cluster import Cluster
 from cassandra.auth import PlainTextAuthProvider
 
 BUNDLE="creds.zip"
-USER='Ucomments'
-PASS='Ucomments1'
+USER=''
+PASS=''
 KEYSPACE='comments'
 
 class Connection:
